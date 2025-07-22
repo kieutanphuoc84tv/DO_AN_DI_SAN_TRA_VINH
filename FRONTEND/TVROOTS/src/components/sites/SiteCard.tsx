@@ -78,6 +78,54 @@ export default function SiteCard({ site, colorTheme, index }: SiteCardProps) {
 
   const displayName = nameMapping[site.name.toLowerCase()] || site.name;
 
+  // Mapping for ditichcaptinh images
+  const ditichcaptinhImageMapping: Record<string, string> = {
+    "chuaomich.jpg": "omich.jpg",
+    "chuavallec.jpg": "vellec.jpg",
+    "chuachroitasan.jpg": "chroitansa.jpg",
+    "bananminhtinhtravinh.jpg": "bananninhtinhtravinh.jpg",
+    "chroitansa.jpg": "chroitansa.jpg",
+    "bananninhtinhtravinh.jpg": "bananninhtinhtravinh.jpg",
+    "chroi tansa .jpg": "chroitansa.jpg",
+    "chuaphnoompung.jpg": "phnoompung.jpg"
+  };
+
+  // Mapping for ditichquocgia images
+  const ditichquocgiaImageMapping: Record<string, string> = {
+    "l;angongcongau.jpg": "l;angongcongau.jpg",
+    "pysey araram.jpg": "PYSEY ARARAM.jpg",
+    // Add other known mappings here if needed
+  };
+
+  // Normalize the image filename
+  const rawImageName = site.image ? site.image.trim().toLowerCase() : "";
+
+  // Determine which category the image belongs to and get corrected filename
+  let correctedImageName = rawImageName;
+  let imageFolder = "";
+
+  if (rawImageName.includes("ditichcaptinh")) {
+    imageFolder = "ditichcaptinh";
+    correctedImageName = ditichcaptinhImageMapping[rawImageName] || rawImageName;
+  } else if (rawImageName.includes("ditichquocgia")) {
+    imageFolder = "ditichquocgia";
+    correctedImageName = ditichquocgiaImageMapping[rawImageName] || rawImageName;
+  } else {
+    // Default folder or no folder
+    imageFolder = "";
+    correctedImageName = rawImageName;
+  }
+
+  // Remove folder prefix from filename if present
+  if (correctedImageName.startsWith("ditichcaptinh/")) {
+    correctedImageName = correctedImageName.replace("ditichcaptinh/", "");
+  } else if (correctedImageName.startsWith("ditichquocgia/")) {
+    correctedImageName = correctedImageName.replace("ditichquocgia/", "");
+  }
+
+  // Construct the full image path
+  const imagePath = imageFolder ? `/image/${imageFolder}/${correctedImageName}` : `/image/${correctedImageName}`;
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -88,10 +136,14 @@ export default function SiteCard({ site, colorTheme, index }: SiteCardProps) {
         <div className={`group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 ${colors.hover}`}>
           <div className="h-64 overflow-hidden relative">
             <Image
-              src={site.image && site.image.trim() !== "" ? `/image/${site.image}` : "/image/logodhtravinh.png"}
+              src={imagePath || "/image/placeholder.jpg"}
               alt={displayName}
               fill
               className="object-cover transition-transform duration-500 group-hover:scale-110"
+              onError={(e) => {
+                const target = e.target as HTMLImageElement;
+                target.src = "/image/placeholder.jpg";
+              }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <div className="absolute bottom-0 p-4">
@@ -118,3 +170,4 @@ export default function SiteCard({ site, colorTheme, index }: SiteCardProps) {
     </motion.div>
   );
 }
+

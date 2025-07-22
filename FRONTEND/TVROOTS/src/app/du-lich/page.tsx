@@ -22,6 +22,29 @@ export default function DuLichPage() {
   const [loading, setLoading] = useState(true);
   const [filter, setFilter] = useState("all");
   const [searchTerm, setSearchTerm] = useState("");
+  const [randomBanner, setRandomBanner] = useState("");
+
+  // Mảng chứa các URL hình ảnh banner
+  const bannerImages = [
+    "/image/ditichtichtravinh/aobaom.jpg",
+    "/image/ditichtichtravinh/chuaang.jpg",
+    "/image/ditichtichtravinh/chuachongbat.jpg", // Thay thế phuocminhcung.jpg bằng chuachongbat.jpg cho Chùa Hang
+    "/image/ditichtichtravinh/denthohochiminh.jpg",
+    "/image/ditichcaptinh/nuongnuong.jpg",
+    "/image/ditichtichtravinh/chuabamom.jpg",
+    "/image/VuonTraiCayCauKe.jpg",
+    "/image/ChoNoiCauKe.jpg"
+  ];
+
+  // Chọn banner ngẫu nhiên khi component mount
+  useEffect(() => {
+    const getRandomBanner = () => {
+      const randomIndex = Math.floor(Math.random() * bannerImages.length);
+      return bannerImages[randomIndex];
+    };
+
+    setRandomBanner(getRandomBanner());
+  }, []);
 
   useEffect(() => {
     // Mô phỏng việc tải dữ liệu từ API
@@ -33,7 +56,7 @@ export default function DuLichPage() {
           {
             id: "ao-ba-om",
             name: "Ao Bà Om",
-            image: "/image/ditichquocgia/aobaom.jpg",
+            image: "/image/ditichtravinh/aobaom.jpg",
             description: "Ao Bà Om là một trong những địa điểm du lịch nổi tiếng nhất của Trà Vinh, thu hút nhiều du khách đến tham quan và nghỉ dưỡng.",
             location: "Phường 8, TP. Trà Vinh",
             category: "danh-lam",
@@ -46,7 +69,7 @@ export default function DuLichPage() {
           {
             id: "chua-ang",
             name: "Chùa Âng",
-            image: "/image/ditichquocgia/chuaang.jpg",
+            image: "/image/ditichtravinh/chuaang.jpg",
             description: "Chùa Âng là ngôi chùa Khmer cổ nổi tiếng với kiến trúc độc đáo và giá trị văn hóa lịch sử to lớn.",
             location: "Phường 8, TP. Trà Vinh",
             category: "tam-linh",
@@ -57,9 +80,22 @@ export default function DuLichPage() {
             ]
           },
           {
+            id: "chua-hang",
+            name: "Chùa Hang",
+            image: "/image/ditichtravinh/Chùa Hang.jpg",
+            description: "Chùa Hang nổi bật với kiến trúc đặc trưng hòa quyện giữa truyền thống và thiên nhiên, tạo nên không gian yên bình thiêng liêng, lưu giữ những giá trị văn hóa tâm linh sâu sắc của người dân Trà Vinh.",
+            location: "Huyện Châu Thành, Trà Vinh",
+            category: "tam-linh",
+            highlights: [
+              "Kiến trúc độc đáo trong hang động tự nhiên",
+              "Không gian tâm linh yên bình, thiêng liêng",
+              "Giá trị văn hóa tâm linh đậm đà bản sắc"
+            ]
+          },
+          {
             id: "bien-ba-dong",
             name: "Biển Ba Động",
-            image: "/image/ditichcaptinh/nuongnuong.jpg",
+            image: "/image/Biển Ba Động.PNG",
             description: "Biển Ba Động là bãi biển hoang sơ với bờ cát trắng mịn và hàng dừa xanh mát, là điểm đến lý tưởng cho du khách muốn tránh xa sự ồn ào.",
             location: "Huyện Duyên Hải, Trà Vinh",
             category: "bien",
@@ -83,19 +119,6 @@ export default function DuLichPage() {
             ]
           },
           {
-            id: "chua-hang",
-            name: "Chùa Hang",
-            image: "/image/ditichcaptinh/chuachongbat.jpg",
-            description: "Chùa Hang là ngôi chùa cổ nằm trong hang động tự nhiên, tạo nên một không gian tâm linh độc đáo và huyền bí.",
-            location: "Huyện Châu Thành, Trà Vinh",
-            category: "tam-linh",
-            highlights: [
-              "Kiến trúc độc đáo trong hang động",
-              "Không gian tâm linh yên tĩnh",
-              "Cảnh quan thiên nhiên tuyệt đẹp"
-            ]
-          },
-          {
             id: "cho-noi-cau-ke",
             name: "Chợ Nổi Cầu Kè",
             image: "/image/ChoNoiCauKe.jpg",
@@ -109,7 +132,7 @@ export default function DuLichPage() {
             ]
           }
         ];
-        
+
         setTourSpots(sampleData);
       } catch (error) {
         console.error("Lỗi khi tải dữ liệu:", error);
@@ -131,28 +154,32 @@ export default function DuLichPage() {
     <main className="min-h-screen bg-stone-50">
       <Navbar introCompleted={true} />
 
-      {/* Banner */}
-      <div className="relative h-80 w-full">
-        <Image
-          src="/images/du-lich-banner.jpg"
-          alt="Du lịch Trà Vinh"
-          fill
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-          <div className="text-center">
-            <h1
-              className={`${playfair.className} text-4xl md:text-5xl font-bold text-white mb-4`}
-            >
+      {/* Random Banner */}
+      <div className="relative h-96 w-full overflow-hidden">
+        {randomBanner && (
+          <Image
+            src="/image/thành phố trà vinh.jpg"
+            alt="Du Lịch Trà Vinh"
+            fill
+            className="object-cover"
+            priority
+          />
+        )}
+        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+          <div className="text-center text-white">
+            <h1 className={`${playfair.className} text-4xl md:text-6xl font-bold mb-4`}>
               Du Lịch Trà Vinh
             </h1>
-            <p className={`${lora.className} text-white text-lg max-w-2xl mx-auto`}>
-              Khám phá vẻ đẹp thiên nhiên, văn hóa và ẩm thực đặc sắc của vùng đất Trà Vinh
+            <p className={`${lora.className} text-lg md:text-xl max-w-2xl mx-auto px-4`}>
+              Khám phá vẻ đẹp độc đáo của vùng đất Trà Vinh với những danh lam thắng cảnh, 
+              văn hóa đa dạng và ẩm thực phong phú
             </p>
           </div>
         </div>
+        {/* Gradient overlay for better text readability */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-black/20"></div>
       </div>
-
+      {/* Video giới thiệu với viền mỏng */}
       {/* Thông tin du lịch */}
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
@@ -204,61 +231,37 @@ export default function DuLichPage() {
           <div className="flex flex-wrap gap-2">
             <button
               onClick={() => setFilter("all")}
-              className={`px-4 py-2 rounded-full ${
-                filter === "all"
-                  ? "bg-orange-600 text-white"
-                  : "bg-orange-100 text-orange-800"
-              }`}
+              className={`px-4 py-2 rounded-full transition-colors ${filter === "all" ? "bg-orange-600 text-white" : "bg-orange-100 text-orange-800 hover:bg-orange-200"}`}
             >
               Tất cả
             </button>
             <button
               onClick={() => setFilter("danh-lam")}
-              className={`px-4 py-2 rounded-full ${
-                filter === "danh-lam"
-                  ? "bg-orange-600 text-white"
-                  : "bg-orange-100 text-orange-800"
-              }`}
+              className={`px-4 py-2 rounded-full transition-colors ${filter === "danh-lam" ? "bg-orange-600 text-white" : "bg-orange-100 text-orange-800 hover:bg-orange-200"}`}
             >
               Danh lam thắng cảnh
             </button>
             <button
               onClick={() => setFilter("tam-linh")}
-              className={`px-4 py-2 rounded-full ${
-                filter === "tam-linh"
-                  ? "bg-orange-600 text-white"
-                  : "bg-orange-100 text-orange-800"
-              }`}
+              className={`px-4 py-2 rounded-full transition-colors ${filter === "tam-linh" ? "bg-orange-600 text-white" : "bg-orange-100 text-orange-800 hover:bg-orange-200"}`}
             >
               Du lịch tâm linh
             </button>
             <button
               onClick={() => setFilter("bien")}
-              className={`px-4 py-2 rounded-full ${
-                filter === "bien"
-                  ? "bg-orange-600 text-white"
-                  : "bg-orange-100 text-orange-800"
-              }`}
+              className={`px-4 py-2 rounded-full transition-colors ${filter === "bien" ? "bg-orange-600 text-white" : "bg-orange-100 text-orange-800 hover:bg-orange-200"}`}
             >
               Biển
             </button>
             <button
               onClick={() => setFilter("sinh-thai")}
-              className={`px-4 py-2 rounded-full ${
-                filter === "sinh-thai"
-                  ? "bg-orange-600 text-white"
-                  : "bg-orange-100 text-orange-800"
-              }`}
+              className={`px-4 py-2 rounded-full transition-colors ${filter === "sinh-thai" ? "bg-orange-600 text-white" : "bg-orange-100 text-orange-800 hover:bg-orange-200"}`}
             >
               Du lịch sinh thái
             </button>
             <button
               onClick={() => setFilter("van-hoa")}
-              className={`px-4 py-2 rounded-full ${
-                filter === "van-hoa"
-                  ? "bg-orange-600 text-white"
-                  : "bg-orange-100 text-orange-800"
-              }`}
+              className={`px-4 py-2 rounded-full transition-colors ${filter === "van-hoa" ? "bg-orange-600 text-white" : "bg-orange-100 text-orange-800 hover:bg-orange-200"}`}
             >
               Du lịch văn hóa
             </button>
@@ -267,7 +270,7 @@ export default function DuLichPage() {
             <input
               type="text"
               placeholder="Tìm kiếm điểm du lịch..."
-              className="px-4 py-2 border border-gray-300 rounded-full w-full md:w-64"
+              className="px-4 py-2 border border-gray-300 rounded-full w-full md:w-64 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
@@ -329,7 +332,7 @@ export default function DuLichPage() {
                   </ul>
                   <Link
                     href={`/du-lich/${spot.id}`}
-                    className="inline-flex items-center text-orange-600 hover:text-orange-700"
+                    className="inline-flex items-center text-orange-600 hover:text-orange-700 transition-colors"
                   >
                     <span>Xem chi tiết</span>
                     <svg
@@ -369,4 +372,3 @@ export default function DuLichPage() {
     </main>
   );
 }
-

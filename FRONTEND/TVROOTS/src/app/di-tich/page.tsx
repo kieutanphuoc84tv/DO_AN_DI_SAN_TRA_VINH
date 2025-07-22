@@ -24,9 +24,8 @@ interface Site {
 export default function DiTichPage() {
   const [sites, setSites] = useState<Site[]>([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState("");
+  const [error, setError] = useState<string | null>(null);
 
-  // eslint-disable-next-line no-unused-vars
   const [searchTerm, setSearchTerm] = useState("");
   const [filter, setFilter] = useState("all");
 
@@ -85,7 +84,7 @@ export default function DiTichPage() {
         const sitesResponse = await fetch("http://localhost:3000/sites");
         const sitesData = await sitesResponse.json();
         setSites(sitesData);
-      } catch (error) {
+      } catch {
         setError("Lỗi khi tải dữ liệu");
       } finally {
         setLoading(false);
@@ -95,14 +94,50 @@ export default function DiTichPage() {
     fetchData();
   }, []);
 
-    const filteredSites = sites.filter((site) => {
+  const excludedSiteIds = [
+    "bananminhtinhtravinh",
+    "cancu",
+    "dinhphuduc",
+    "dinhkhanhhung",
+    "chuabagiam",
+    "cansnom",
+    "chualongthanh",
+    "dinhminhthuan",
+    "dongkhoimylong",
+    "mieuctrung",
+    "dinhmyan",
+    "huynhky",
+    "thanlonghauthuong",
+    "mietuienvang",
+    "mieuxubalaghi",
+    "nuongnuong",
+    "phuocmy",
+    "trakhup",
+    "phnosankethmay",
+    "phuocloc",
+    "thanhtinhthanhlong",
+    "chuaslapang",
+    "ditichmieucontrung",
+    "chuaomich",
+    "chuaphnoompung",
+    "laubacohy",
+    "chuavallec",
+    "chuakrapoumchhouk",
+    "chuachroitasan",
+    "noitiepnhanvukhi",
+    "chualapang",
+    "noitiepnhanvukhi"
+  ];
+
+  const filteredSites = sites.filter((site) => {
+      if (excludedSiteIds.includes(site.id)) return false;
       if (filter === "all") return true;
       if (filter === "quocgia" && site.image.includes("ditichquocgia")) return true;
-      if (filter === "tinh" && site.image.includes("ditichcaptinh")) return true;
       return false;
     }).filter((site) =>
       site.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
+
 
   if (error) {
     return (
@@ -180,13 +215,7 @@ export default function DiTichPage() {
                 onClick={() => setFilter("quocgia")}
                 className={`px-5 py-2.5 rounded-full font-medium transition-all duration-300 ${filter === "quocgia" ? "bg-orange-600 text-white shadow-md" : "bg-orange-50 text-orange-700 hover:bg-orange-100"}`}
               >
-                Cấp Quốc Gia
-              </button>
-              <button
-                onClick={() => setFilter("tinh")}
-                className={`px-5 py-2.5 rounded-full font-medium transition-all duration-300 ${filter === "tinh" ? "bg-green-600 text-white shadow-md" : "bg-green-50 text-green-700 hover:bg-green-100"}`}
-              >
-                Cấp Tỉnh
+                Di tích Trà Vinh
               </button>
             </div>
 
@@ -234,8 +263,8 @@ export default function DiTichPage() {
                     />
                     <div className="absolute top-4 right-4 bg-orange-600 text-white text-xs px-2 py-1 rounded-full">
                       {site.image.includes("ditichquocgia")
-                        ? "Cấp quốc gia"
-                        : "Cấp tỉnh"}
+                        ? "Di tích Trà Vinh"
+                        : "Di tích Trà Vinh"}
                     </div>
                   </div>
                   <div className="p-4">

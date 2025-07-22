@@ -34,8 +34,8 @@ export default function ContemporaryPeriod() {
         
         <div className="order-1 lg:order-2 relative h-80 lg:h-auto rounded-xl overflow-hidden shadow-lg">
           <Image
-            src="/images/tra-vinh-hien-dai.jpg"
-            alt="Trà Vinh thời kỳ hiện đại"
+            src="/image/lichsu/hiendai/thanh_pho_tra_vinh.jpg"
+            alt="Thành phố Trà Vinh"
             fill
             className="object-cover"
           />
@@ -62,7 +62,7 @@ export default function ContemporaryPeriod() {
           <div className="bg-white rounded-lg shadow-md overflow-hidden border border-amber-100 hover:shadow-lg transition-shadow">
             <div className="relative h-48">
               <Image
-                src="/images/industrial-zone.jpg"
+                src="/image/lichsu/hiendai/khu-cong-nghiep-long-duc.jpg"
                 alt="Khu công nghiệp"
                 fill
                 className="object-cover"
@@ -77,8 +77,8 @@ export default function ContemporaryPeriod() {
           <div className="bg-white rounded-lg shadow-md overflow-hidden border border-amber-100 hover:shadow-lg transition-shadow">
             <div className="relative h-48">
               <Image
-                src="/images/travinh-university.jpg"
-                alt="Đại học Trà Vinh"
+                src="/image/lichsu/hiendai/truong_dai_hoc_tra_vinh.jpg"
+                alt="Trường Đại học Trà Vinh"
                 fill
                 className="object-cover"
               />
@@ -92,8 +92,8 @@ export default function ContemporaryPeriod() {
           <div className="bg-white rounded-lg shadow-md overflow-hidden border border-amber-100 hover:shadow-lg transition-shadow">
             <div className="relative h-48">
               <Image
-                src="/images/cultural-preservation.jpg"
-                alt="Bảo tồn văn hóa"
+                src="/image/lichsu/hiendai/bao_ton_tra_vinh.jpg"
+                alt="Bảo tồn Trà Vinh"
                 fill
                 className="object-cover"
               />

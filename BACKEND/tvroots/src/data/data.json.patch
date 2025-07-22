@@ -1,0 +1,443 @@
+"id": "chuachroitasan",
+      "name": "Chùa Chroi Tasan",
+      "image": "ditichtravinh/Chua_Chroi_Tasan.PNG",
+      "description": "Chùa Chroi Tasan là một ngôi chùa Khmer tiêu biểu với kiến trúc truyền thống và giá trị văn hóa đặc sắc.",
+      "location": "Huyện Trà Cú, tỉnh Trà Vinh",
+      "established": "Thế kỷ 19",
+      "recognition": "Di tích lịch sử - văn hóa cấp tỉnh",
+      "details": {
+        "history": "Chùa Chroi Tasan được xây dựng từ thế kỷ 19, là trung tâm sinh hoạt tôn giáo và văn hóa của cộng đồng Khmer.",
+        "culturalValue": [
+          "Trung tâm văn hóa Phật giáo Khmer",
+          "Nơi tổ chức lễ hội truyền thống",
+          "Công trình kiến trúc nghệ thuật"
+        ],
+        "historicalValue": [
+          "Di tích văn hóa cấp tỉnh",
+          "Chứng tích lịch sử địa phương",
+          "Nơi lưu giữ truyền thống"
+        ],
+        "services": [
+          "Hướng dẫn tham quan",
+          "Không gian xanh mát",
+          "Bãi đỗ xe"
+        ],
+        "info": [
+          "Mở cửa: 6:00 - 18:00",
+          "Tham quan miễn phí",
+          "Chụp ảnh tự do"
+        ],
+        "mapUrl": "https://www.google.com/maps?q=Chùa+Chroi+Tasan,+Trà+Vinh",
+        "directionsUrl": "https://www.google.com/maps/dir/?api=1&destination=Chùa+Chroi+Tasan,+Trà+Vinh"
+      }
+    },
+=======
+    {
+      "id": "chuachroitasan",
+      "name": "Chùa Chroi Tasan",
+      "image": "ditichtravinh/Chua_Chroi_Tasan.PNG",
+      "description": "Chùa Chroi Tasan là một ngôi chùa Khmer tiêu biểu với kiến trúc truyền thống và giá trị văn hóa đặc sắc.",
+      "location": "Huyện Trà Cú, tỉnh Trà Vinh",
+      "established": "Thế kỷ 19",
+      "recognition": "Di tích lịch sử - văn hóa cấp tỉnh",
+      "details": {
+        "history": "Chùa Chroi Tasan được xây dựng từ thế kỷ 19, là trung tâm sinh hoạt tôn giáo và văn hóa của cộng đồng Khmer.",
+        "culturalValue": [
+          "Trung tâm văn hóa Phật giáo Khmer",
+          "Nơi tổ chức lễ hội truyền thống",
+          "Công trình kiến trúc nghệ thuật"
+        ],
+        "historicalValue": [
+          "Di tích văn hóa cấp tỉnh",
+          "Chứng tích lịch sử địa phương",
+          "Nơi lưu giữ truyền thống"
+        ],
+        "services": [
+          "Hướng dẫn tham quan",
+          "Không gian xanh mát",
+          "Bãi đỗ xe"
+        ],
+        "info": [
+          "Mở cửa: 6:00 - 18:00",
+          "Tham quan miễn phí",
+          "Chụp ảnh tự do"
+        ],
+        "mapUrl": "https://www.google.com/maps?q=Chùa+Chroi+Tasan,+Trà+Vinh",
+        "directionsUrl": "https://www.google.com/maps/dir/?api=1&destination=Chùa+Chroi+Tasan,+Trà+Vinh"
+      }
+    },
+<<<<<<< REPLACE
+    {
+      "id": "chuachongbat",
+      "name": "Chùa Chong Bát",
+      "image": "ditichcaptinh/chuachongbat.jpg",
+      "description": "Chùa Chong Bát là ngôi chùa Khmer cổ kính, mang đậm nét kiến trúc truyền thống và là nơi sinh hoạt văn hóa tâm linh của cộng đồng.",
+      "location": "Huyện Trà Cú, tỉnh Trà Vinh",
+      "established": "Thế kỷ 19",
+      "recognition": "Di tích lịch sử - văn hóa cấp tỉnh",
+      "details": {
+        "history": "Chùa Chong Bát được xây dựng từ thế kỷ 19, là trung tâm sinh hoạt tôn giáo và văn hóa của cộng đồng Khmer.",
+        "culturalValue": [
+          "Trung tâm văn hóa Phật giáo Khmer",
+          "Nơi tổ chức lễ hội truyền thống",
+          "Công trình kiến trúc nghệ thuật"
+        ],
+        "historicalValue": [
+          "Di tích văn hóa cấp tỉnh",
+          "Chứng tích lịch sử địa phương",
+          "Nơi lưu giữ truyền thống"
+        ],
+        "services": [
+          "Hướng dẫn tham quan",
+          "Không gian xanh mát",
+          "Bãi đỗ xe"
+        ],
+        "info": [
+          "Mở cửa: 6:00 - 18:00",
+          "Tham quan miễn phí",
+          "Chụp ảnh tự do"
+        ],
+        "mapUrl": "https://www.google.com/maps?q=Chùa+Chong+Bát,+Trà+Vinh",
+        "directionsUrl": "https://www.google.com/maps/dir/?api=1&destination=Chùa+Chong+Bát,+Trà+Vinh"
+      }
+    },
+    {
+      "id": "chuaslapang",
+      "name": "Chùa Slapang",
+      "image": "ditichcaptinh/chuaslapang.jpg",
+      "description": "Chùa Slapang là một trong những ngôi chùa Khmer tiêu biểu với kiến trúc độc đáo và giá trị văn hóa đặc sắc.",
+      "location": "Huyện Trà Cú, tỉnh Trà Vinh",
+      "established": "Thế kỷ 19",
+      "recognition": "Di tích lịch sử - văn hóa cấp tỉnh",
+      "details": {
+        "history": "Chùa Slapang được xây dựng từ thế kỷ 19, là nơi tổ chức các hoạt động tôn giáo và lễ hội truyền thống của người Khmer.",
+        "culturalValue": [
+          "Trung tâm văn hóa Phật giáo Khmer",
+          "Nơi tổ chức lễ hội truyền thống",
+          "Công trình kiến trúc nghệ thuật"
+        ],
+        "historicalValue": [
+          "Di tích văn hóa cấp tỉnh",
+          "Chứng tích lịch sử địa phương",
+          "Nơi lưu giữ truyền thống"
+        ],
+        "services": [
+          "Hướng dẫn tham quan",
+          "Không gian xanh mát",
+          "Bãi đỗ xe"
+        ],
+        "info": [
+          "Mở cửa: 6:00 - 18:00",
+          "Tham quan miễn phí",
+          "Chụp ảnh tự do"
+        ],
+        "mapUrl": "https://www.google.com/maps?q=Chùa+Slapang,+Trà+Vinh",
+        "directionsUrl": "https://www.google.com/maps/dir/?api=1&destination=Chùa+Slapang,+Trà+Vinh"
+      }
+    },
+    {
+      "id": "chuavallec",
+      "name": "Chùa Vallec",
+      "image": "ditichcaptinh/chuavallec.jpg",
+      "description": "Chùa Vallec là ngôi chùa Khmer nổi bật với kiến trúc truyền thống và là nơi tổ chức nhiều lễ hội đặc sắc.",
+      "location": "Huyện Trà Cú, tỉnh Trà Vinh",
+      "established": "Thế kỷ 19",
+      "recognition": "Di tích lịch sử - văn hóa cấp tỉnh",
+      "details": {
+        "history": "Chùa Vallec được xây dựng từ thế kỷ 19, là trung tâm sinh hoạt tôn giáo và văn hóa của cộng đồng Khmer.",
+        "culturalValue": [
+          "Trung tâm văn hóa Phật giáo Khmer",
+          "Nơi tổ chức lễ hội truyền thống",
+          "Công trình kiến trúc nghệ thuật"
+        ],
+        "historicalValue": [
+          "Di tích văn hóa cấp tỉnh",
+          "Chứng tích lịch sử địa phương",
+          "Nơi lưu giữ truyền thống"
+        ],
+        "services": [
+          "Hướng dẫn tham quan",
+          "Không gian xanh mát",
+          "Bãi đỗ xe"
+        ],
+        "info": [
+          "Mở cửa: 6:00 - 18:00",
+          "Tham quan miễn phí",
+          "Chụp ảnh tự do"
+        ],
+        "mapUrl": "https://www.google.com/maps?q=Chùa+Vallec,+Trà+Vinh",
+        "directionsUrl": "https://www.google.com/maps/dir/?api=1&destination=Chùa+Vallec,+Trà+Vinh"
+      }
+    },
+    {
+      "id": "chuaphnoompung",
+      "name": "Chùa Phnoompung",
+      "image": "ditichcaptinh/chuaphnoompung.jpg",
+      "description": "Chùa Phnoompung là ngôi chùa Khmer cổ kính, nơi lưu giữ nhiều giá trị văn hóa truyền thống.",
+      "location": "Huyện Trà Cú, tỉnh Trà Vinh",
+      "established": "Thế kỷ 19",
+      "recognition": "Di tích lịch sử - văn hóa cấp tỉnh",
+      "details": {
+        "history": "Chùa Phnoompung được xây dựng từ thế kỷ 19, là nơi tổ chức các hoạt động tôn giáo và lễ hội truyền thống của người Khmer.",
+        "culturalValue": [
+          "Trung tâm văn hóa Phật giáo Khmer",
+          "Nơi tổ chức lễ hội truyền thống",
+          "Công trình kiến trúc nghệ thuật"
+        ],
+        "historicalValue": [
+          "Di tích văn hóa cấp tỉnh",
+          "Chứng tích lịch sử địa phương",
+          "Nơi lưu giữ truyền thống"
+        ],
+        "services": [
+          "Hướng dẫn tham quan",
+          "Không gian xanh mát",
+          "Bãi đỗ xe"
+        ],
+        "info": [
+          "Mở cửa: 6:00 - 18:00",
+          "Tham quan miễn phí",
+          "Chụp ảnh tự do"
+        ],
+        "mapUrl": "https://www.google.com/maps?q=Chùa+Phnoompung,+Trà+Vinh",
+        "directionsUrl": "https://www.google.com/maps/dir/?api=1&destination=Chùa+Phnoompung,+Trà+Vinh"
+      }
+    },
+    {
+      "id": "chuaomich",
+      "name": "Chùa Ô Mịch",
+      "image": "ditichcaptinh/chuaomich.jpg",
+      "description": "Chùa Ô Mịch là một trong những ngôi chùa Khmer lâu đời, mang đậm nét kiến trúc truyền thống.",
+      "location": "Huyện Trà Cú, tỉnh Trà Vinh",
+      "established": "Thế kỷ 19",
+      "recognition": "Di tích lịch sử - văn hóa cấp tỉnh",
+      "details": {
+        "history": "Chùa Ô Mịch được xây dựng từ thế kỷ 19, là nơi tổ chức các hoạt động tôn giáo và lễ hội truyền thống của người Khmer.",
+        "culturalValue": [
+          "Trung tâm văn hóa Phật giáo Khmer",
+          "Nơi tổ chức lễ hội truyền thống",
+          "Công trình kiến trúc nghệ thuật"
+        ],
+        "historicalValue": [
+          "Di tích văn hóa cấp tỉnh",
+          "Chứng tích lịch sử địa phương",
+          "Nơi lưu giữ truyền thống"
+        ],
+        "services": [
+          "Hướng dẫn tham quan",
+          "Không gian xanh mát",
+          "Bãi đỗ xe"
+        ],
+        "info": [
+          "Mở cửa: 6:00 - 18:00",
+          "Tham quan miễn phí",
+          "Chụp ảnh tự do"
+        ],
+        "mapUrl": "https://www.google.com/maps?q=Chùa+Ô+Mịch,+Trà+Vinh",
+        "directionsUrl": "https://www.google.com/maps/dir/?api=1&destination=Chùa+Ô+Mịch,+Trà+Vinh"
+      }
+    },
+    {
+      "id": "chuakrapoumchhouk",
+      "name": "Chùa Krapoumchhouk",
+      "image": "ditichcaptinh/chuakrapoumchhouk.jpg",
+      "description": "Chùa Krapoumchhouk là ngôi chùa Khmer cổ kính, nơi lưu giữ nhiều giá trị văn hóa truyền thống.",
+      "location": "Huyện Trà Cú, tỉnh Trà Vinh",
+      "established": "Thế kỷ 19",
+      "recognition": "Di tích lịch sử - văn hóa cấp tỉnh",
+      "details": {
+        "history": "Chùa Krapoumchhouk được xây dựng từ thế kỷ 19, là nơi tổ chức các hoạt động tôn giáo và lễ hội truyền thống của người Khmer.",
+        "culturalValue": [
+          "Trung tâm văn hóa Phật giáo Khmer",
+          "Nơi tổ chức lễ hội truyền thống",
+          "Công trình kiến trúc nghệ thuật"
+        ],
+        "historicalValue": [
+          "Di tích văn hóa cấp tỉnh",
+          "Chứng tích lịch sử địa phương",
+          "Nơi lưu giữ truyền thống"
+        ],
+        "services": [
+          "Hướng dẫn tham quan",
+          "Không gian xanh mát",
+          "Bãi đỗ xe"
+        ],
+        "info": [
+          "Mở cửa: 6:00 - 18:00",
+          "Tham quan miễn phí",
+          "Chụp ảnh tự do"
+        ],
+        "mapUrl": "https://www.google.com/maps?q=Chùa+Krapoumchhouk,+Trà+Vinh",
+        "directionsUrl": "https://www.google.com/maps/dir/?api=1&destination=Chùa+Krapoumchhouk,+Trà+Vinh"
+      }
+    }
+  ],
+  "overview_quocgia": {
+    "introduction": {
+      "title": "Giá trị di sản văn hóa Trà Vinh (Di tích cấp quốc gia)",
+      "description": "Di tích cấp quốc gia tại Trà Vinh là minh chứng cho sự đa dạng và phong phú trong di sản văn hóa - lịch sử của vùng đất này. Bao gồm nhiều loại hình khác nhau, từ chùa chiền, đình miếu đến các công trình kiến trúc và địa điểm lịch sử, mỗi di tích đều mang trong mình những giá trị độc đáo:",
+      "values": [
+        {
+          "title": "Giá trị lịch sử",
+          "description": "Ghi dấu những sự kiện, nhân vật quan trọng trong lịch sử địa phương và đất nước"
+        },
+        {
+          "title": "Giá trị văn hóa",
+          "description": "Thể hiện bản sắc văn hóa đặc trưng của các dân tộc sinh sống tại Trà Vinh"
+        },
+        {
+          "title": "Giá trị kiến trúc - nghệ thuật",
+          "description": "Mang đến những công trình với kiến trúc độc đáo, tinh xảo"
+        },
+        {
+          "title": "Giá trị giáo dục",
+          "description": "Là nguồn tài liệu quý giá để giáo dục truyền thống cho thế hệ trẻ"
+        },
+        {
+          "title": "Giá trị du lịch",
+          "description": "Thu hút khách tham quan trong và ngoài nước"
+        },
+        {
+          "title": "Giá trị tâm linh",
+          "description": "Là nơi sinh hoạt tín ngưỡng của cộng đồng các dân tộc"
+        },
+        {
+          "title": "Giá trị nghệ thuật",
+          "description": "Thể hiện những kỹ thuật nghệ thuật đặc trưng của các dân tộc"
+        }
+      ],
+      "conclusion": "Việc bảo tồn và phát huy giá trị của các di tích này không chỉ góp phần gìn giữ bản sắc văn hóa dân tộc mà còn tạo nên sức hấp dẫn đặc biệt cho du lịch Trà Vinh, mở ra cơ hội phát triển kinh tế - xã hội bền vững cho địa phương."
+    },
+    "statistics": {
+      "total": 12,
+      "categories": [
+        {
+          "name": "Di tích kiến trúc nghệ thuật",
+          "count": 5
+        },
+        {
+          "name": "Di tích lịch sử",
+          "count": 4
+        },
+        {
+          "name": "Di tích khảo cổ",
+          "count": 2
+        },
+        {
+          "name": "Di tích danh lam thắng cảnh",
+          "count": 1
+        }
+      ]
+    },
+    "distribution": [
+      {
+        "location": "TP. Trà Vinh",
+        "count": 4
+      },
+      {
+        "location": "H. Càng Long",
+        "count": 2
+      },
+      {
+        "location": "H. Châu Thành",
+        "count": 2
+      },
+      {
+        "location": "H. Cầu Ngang",
+        "count": 2
+      },
+      {
+        "location": "Các huyện khác",
+        "count": 2
+      }
+    ],
+    "generalInfo": [
+      "Được công nhận từ năm 1990 đến nay",
+      "Đa dạng về loại hình và giá trị",
+      "Phân bố rộng khắp các địa phương",
+      "Đang được bảo tồn và phát huy giá trị"
+    ]
+  },
+  "overview_tinh": {
+    "introduction": {
+      "title": "Giá trị di sản văn hóa Trà Vinh (Di tích cấp tỉnh)",
+      "description": "Di tích cấp tỉnh tại Trà Vinh là minh chứng cho sự đa dạng và phong phú trong di sản văn hóa - lịch sử của vùng đất này. Bao gồm nhiều loại hình khác nhau, từ chùa chiền, đình miếu đến các công trình kiến trúc và địa điểm lịch sử, mỗi di tích đều mang trong mình những giá trị độc đáo:",
+      "values": [
+        {
+          "title": "Giá trị lịch sử",
+          "description": "Ghi dấu những sự kiện, nhân vật quan trọng trong lịch sử địa phương"
+        },
+        {
+          "title": "Giá trị văn hóa",
+          "description": "Thể hiện bản sắc văn hóa đặc trưng của các dân tộc sinh sống tại Trà Vinh"
+        },
+        {
+          "title": "Giá trị kiến trúc - nghệ thuật",
+          "description": "Mang đến những công trình với kiến trúc độc đáo, tinh xảo"
+        },
+        {
+          "title": "Giá trị giáo dục",
+          "description": "Là nguồn tài liệu quý giá để giáo dục truyền thống cho thế hệ trẻ"
+        },
+        {
+          "title": "Giá trị du lịch",
+          "description": "Thu hút khách tham quan trong và ngoài tỉnh"
+        },
+        {
+          "title": "Giá trị tâm linh",
+          "description": "Là nơi sinh hoạt tín ngưỡng của cộng đồng các dân tộc"
+        }
+      ],
+      "conclusion": "Việc bảo tồn và phát huy giá trị của các di tích này không chỉ góp phần gìn giữ bản sắc văn hóa dân tộc mà còn tạo nên sức hấp dẫn đặc biệt cho du lịch Trà Vinh, mở ra cơ hội phát triển kinh tế - xã hội bền vững cho địa phương."
+    },
+    "statistics": {
+      "total": 12,
+      "categories": [
+        {
+          "name": "Di tích kiến trúc nghệ thuật",
+          "count": 5
+        },
+        {
+          "name": "Di tích lịch sử",
+          "count": 4
+        },
+        {
+          "name": "Di tích khảo cổ",
+          "count": 2
+        },
+        {
+          "name": "Di tích danh lam thắng cảnh",
+          "count": 1
+        }
+      ]
+    },
+    "distribution": [
+      {
+        "location": "TP. Trà Vinh",
+        "count": 4
+      },
+      {
+        "location": "H. Càng Long",
+        "count": 2
+      },
+      {
+        "location": "H. Châu Thành",
+        "count": 2
+      },
+      {
+        "location": "H. Cầu Ngang",
+        "count": 2
+      },
+      {
+        "location": "Các huyện khác",
+        "count": 2
+      }
+    ],
+    "generalInfo": [
+      "Được công nhận từ năm 1990 đến nay",
+      "Đa dạng về loại hình và giá trị",
+      "Phân bố rộng khắp các địa phương",
+      "Đang được bảo tồn và phát huy giá trị"
+    ]
+  }
+}

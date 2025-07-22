@@ -244,21 +244,8 @@ const Navbar = ({ introCompleted }: NavbarProps) => {
   return (
     <>
       {/* Logo ở góc trên trái - bỏ lớp CSS transition và thay bằng GSAP */}
-      <div ref={logoRef} className="fixed top-4 left-4 z-40 opacity-0">
-        <div
-          className={`${playfair.className} text-orange-600 font-bold text-3xl md:text-4xl cursor-pointer tracking-wide relative group`}
-          onClick={() => {
-            window.scrollTo({
-              top: 0,
-              behavior: "smooth",
-            });
-          }}
-        >
-          <span className="transition-all duration-300 group-hover:text-orange-700">
-            TVRoots
-          </span>
-          <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-orange-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
-        </div>
+      <div ref={logoRef} className="fixed top-4 left-4 z-40 opacity-0 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+        <img src="/image/logodhtravinh.png" alt="Logo TVRoots" className="h-16 w-auto" />
       </div>
 
       {/* Nút menu - bỏ lớp CSS transition và thay bằng GSAP */}
@@ -332,17 +319,11 @@ const Navbar = ({ introCompleted }: NavbarProps) => {
           <FullscreenNavLink href="/" onClick={toggleMenu}>
             TRANG CHỦ
           </FullscreenNavLink>
-          <FullscreenNavLink href="#gioi-thieu" onClick={toggleMenu}>
+          <FullscreenNavLink href="/gioi-thieu" onClick={toggleMenu}>
             GIỚI THIỆU
           </FullscreenNavLink>
           <FullscreenNavLink href="/di-tich" onClick={toggleMenu}>
-            DI TÍCH
-          </FullscreenNavLink>
-          <FullscreenNavLink href="/di-tich-quoc-gia" onClick={toggleMenu}>
-            DI TÍCH CẤP QUỐC GIA
-          </FullscreenNavLink>
-          <FullscreenNavLink href="/di-tich-cap-tinh" onClick={toggleMenu}>
-            DI TÍCH CẤP TỈNH
+            DI TÍCH TRÀ VINH
           </FullscreenNavLink>
           <FullscreenNavLink href="/du-lich" onClick={toggleMenu}>
             DU LỊCH

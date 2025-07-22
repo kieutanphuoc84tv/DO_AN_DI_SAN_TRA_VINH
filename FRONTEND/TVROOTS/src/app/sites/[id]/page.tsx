@@ -1,4 +1,7 @@
-import { useEffect, useState } from "react";
+"use client";
+import React from "react";
+
+import { use } from "react";
 
 interface Site {
   id: string;
@@ -10,8 +13,6 @@ interface Site {
   recognition: string;
 }
 
-import React from "react";
-
 interface SiteDetailPageProps {
   params: Promise<{
     id: string;
@@ -19,6 +20,9 @@ interface SiteDetailPageProps {
 }
 
 export default function SiteDetailPage({ params }: SiteDetailPageProps) {
+  const resolvedParams = use(params);
+  const id = resolvedParams.id;
+
   const [site, setSite] = React.useState<Site | null>(null);
   const [loading, setLoading] = React.useState(true);
   const [error, setError] = React.useState("");
@@ -26,23 +30,31 @@ export default function SiteDetailPage({ params }: SiteDetailPageProps) {
   React.useEffect(() => {
     async function fetchSite() {
       try {
-        const resolvedParams = await params;
-        const id = resolvedParams.id;
         if (!id) return;
-        const res = await fetch(`/sites/${id}`);
+        const res = await fetch(`http://localhost:3000/sites/${id}`);
         if (!res.ok) {
           throw new Error("Site not found");
         }
-        const data = await res.json();
-        setSite(data);
-        setLoading(false);
-      } catch {
+        const text = await res.text();
+        try {
+          const data = JSON.parse(text);
+          if (!data || Object.keys(data).length === 0) {
+            throw new Error("No data found");
+          }
+          setSite(data);
+          setLoading(false);
+        } catch (err) {
+          console.error("Failed to parse JSON:", err, "Response text:", text);
+          throw err;
+        }
+      } catch (err) {
+        console.error("Error fetching site data:", err);
         setError("Không tìm thấy trang hoặc dữ liệu.");
         setLoading(false);
       }
     }
     fetchSite();
-  }, [params]);
+  }, [id]);
 
   if (loading) return <div>Đang tải...</div>;
   if (error) return <div>{error}</div>;

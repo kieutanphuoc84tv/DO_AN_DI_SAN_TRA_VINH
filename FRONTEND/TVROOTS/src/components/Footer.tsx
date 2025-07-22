@@ -78,20 +78,8 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/di-tich-quoc-gia"
-                  className="text-gray-400 hover:text-orange-500 transition-colors flex items-center"
-                >
-                  <span className="mr-2">›</span> Di tích cấp quốc gia
-                </Link>
               </li>
               <li>
-                <Link
-                  href="/di-tich-cap-tinh"
-                  className="text-gray-400 hover:text-orange-500 transition-colors flex items-center"
-                >
-                  <span className="mr-2">›</span> Di tích cấp tỉnh
-                </Link>
               </li>
               <li>
                 <Link

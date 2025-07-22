@@ -6,6 +6,8 @@ import Link from "next/link";
 import { playfair, lora } from "@/components/Introduction";
 import { FaMapMarkerAlt, FaCalendarAlt, FaHistory, FaInfoCircle, FaArrowLeft } from "react-icons/fa";
 
+import React, { use } from "react";
+
 interface SiteDetail {
   id: string;
   name: string;
@@ -25,9 +27,10 @@ interface SiteDetail {
   };
 }
 
-import React from "react";
+export default function SiteDetailPage({ params }: { params: Promise<{ id: string }> }) {
+  const resolvedParams = use(params);
+  const id = resolvedParams.id;
 
-export default function SiteDetailPage({ params }: { params: { id: string } }) {
   const [site, setSite] = React.useState<SiteDetail | null>(null);
   const [loading, setLoading] = React.useState(true);
   const [error, setError] = React.useState<string | null>(null);
@@ -36,27 +39,25 @@ export default function SiteDetailPage({ params }: { params: { id: string } }) {
     const fetchData = async () => {
       try {
         setLoading(true);
-        const id = params.id;
+        if (!id) return;
         const response = await fetch(`http://localhost:3000/sites/${id}`);
-        
+
         if (!response.ok) {
           throw new Error("Không thể tải thông tin di tích");
         }
-        
+
         const data = await response.json();
         setSite(data);
-      } catch (error) {
+      } catch (error: any) {
         console.error("Lỗi khi tải dữ liệu:", error);
-        setError("Không thể tải thông tin di tích. Vui lòng thử lại sau.");
+        setError(error.message || "Không thể tải thông tin di tích. Vui lòng thử lại sau.");
       } finally {
         setLoading(false);
       }
     };
 
-    if (params.id) {
-      fetchData();
-    }
-  }, [params]);
+    fetchData();
+  }, [id]);
 
   if (loading) {
     return (
@@ -102,7 +103,7 @@ export default function SiteDetailPage({ params }: { params: { id: string } }) {
       {/* Hero section */}
       <div className="relative h-96 w-full">
         <Image
-          src={`/images/${site.image}`}
+          src={`/image/${site.image}`}
           alt={site.name}
           fill
           className="object-cover"

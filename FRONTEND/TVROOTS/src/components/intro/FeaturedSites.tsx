@@ -118,19 +118,10 @@ const FeaturedSites = () => {
         <div className="hidden md:block h-[1px] flex-grow bg-orange-300/50 ml-8 mr-6"></div>
         <div className="flex gap-4">
           <Link
-            href="/di-tich-quoc-gia"
+            href="/di-tich"
             className="text-orange-700 hover:text-orange-900 transition-colors text-sm md:text-base flex items-center gap-1 group bg-orange-50 px-3 py-1.5 rounded-full"
           >
-            <span>Di tích quốc gia</span>
-            <span className="group-hover:translate-x-1 transition-transform">
-              →
-            </span>
-          </Link>
-          <Link
-            href="/di-tich-cap-tinh"
-            className="text-green-700 hover:text-green-900 transition-colors text-sm md:text-base flex items-center gap-1 group bg-green-50 px-3 py-1.5 rounded-full"
-          >
-            <span>Di tích cấp tỉnh</span>
+            <span>Di tích Trà Vinh</span>
             <span className="group-hover:translate-x-1 transition-transform">
               →
             </span>
@@ -147,10 +138,9 @@ const FeaturedSites = () => {
           title="Đền thờ Bác Hồ"
           category="Cấp Quốc Gia"
           description="Công trình văn hóa tâm linh trọng điểm với diện tích 5,4 ha, là biểu tượng của lòng thành kính và biết ơn của nhân dân Trà Vinh."
-          image="/image/ditichcapquocgia/den-tho-bac-ho.jpg"
+          image="/image/ditichquocgia/denthohochiminh.jpg"
           className="featured-item"
           size="small" // Changed from large to small for consistency
-          style={{ gap: "1.5rem" }}
         />
 
         {/* Item 2 */}
@@ -158,7 +148,7 @@ const FeaturedSites = () => {
           title="Ao Bà Om"
           category="Danh Thắng"
           description="Di tích danh thắng cấp quốc gia, là một trong những địa điểm du lịch nổi tiếng nhất của Trà Vinh."
-          image="/image/ditichcapquocgia/ao-ba-om.jpg"
+          image="/image/ditichquocgia/aobaom.jpg"
           className="featured-item"
           size="small"
         />
@@ -168,12 +158,18 @@ const FeaturedSites = () => {
           title="Chùa Ang"
           category="Di Tích Tôn Giáo"
           description="Ngôi chùa cổ mang đậm kiến trúc Khmer, là minh chứng cho sự giao thoa văn hóa đặc sắc."
+          image="/image/ditichcaptinh/chuacha.jpg"
           className="featured-item"
           size="small"
         />
+
+        {/* Item 4 */}
+        {/* Removed as per user request */}
+
+        {/* Item 5 */}
+        {/* Removed as per user request */}
       </div>
     </div>
   );
 };
-
 export default FeaturedSites;

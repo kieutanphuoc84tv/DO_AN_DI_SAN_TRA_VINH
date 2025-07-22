@@ -165,10 +165,10 @@ const Loader = ({ onComplete }: LoaderProps) => {
       >
         <div
           ref={textRef}
-          className={`${playfair.className} text-5xl md:text-7xl lg:text-8xl font-bold tracking-wider text-center mb-6 opacity-0`}
+          className={`${playfair.className} text-6xl md:text-7xl lg:text-7xl font-bold tracking-wider text-center mb-6 opacity-0`}
           style={{ textShadow: "0 4px 8px rgba(0,0,0,0.2)" }}
         >
-          TVRoots
+          THE HERITAGE OF TRA VINH
         </div>
 
         {/* Đường gạch ngang */}

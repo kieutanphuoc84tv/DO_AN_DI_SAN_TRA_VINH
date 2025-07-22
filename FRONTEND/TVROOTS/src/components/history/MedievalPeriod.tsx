@@ -33,8 +33,8 @@ export default function MedievalPeriod() {
         
         <div className="order-1 lg:order-2 relative h-80 lg:h-auto rounded-xl overflow-hidden shadow-lg">
           <Image
-            src="/images/tra-vinh-trung-dai.jpg"
-            alt="Trà Vinh thời kỳ trung đại"
+            src="/image/lichsu/trungdai/chua_khmer.jpg"
+            alt="Chùa Khmer cổ tại Trà Vinh"
             fill
             className="object-cover"
           />
@@ -61,7 +61,7 @@ export default function MedievalPeriod() {
           <div className="bg-white rounded-lg shadow-md overflow-hidden border border-amber-100 hover:shadow-lg transition-shadow">
             <div className="relative h-48">
               <Image
-                src="/images/chua-ang.jpg"
+                src="/image/lichsu/trungdai/chua_ang.jpg"
                 alt="Chùa Âng"
                 fill
                 className="object-cover"
@@ -76,7 +76,7 @@ export default function MedievalPeriod() {
           <div className="bg-white rounded-lg shadow-md overflow-hidden border border-amber-100 hover:shadow-lg transition-shadow">
             <div className="relative h-48">
               <Image
-                src="/images/khmer-sculpture.jpg"
+                src="/image/lichsu/trungdai/dieu_khac.jpg"
                 alt="Điêu khắc Khmer"
                 fill
                 className="object-cover"
@@ -91,7 +91,7 @@ export default function MedievalPeriod() {
           <div className="bg-white rounded-lg shadow-md overflow-hidden border border-amber-100 hover:shadow-lg transition-shadow">
             <div className="relative h-48">
               <Image
-                src="/images/khmer-festival.jpg"
+                src="/image/lichsu/trungdai/ghe_ngo.jpg"
                 alt="Lễ hội Khmer"
                 fill
                 className="object-cover"

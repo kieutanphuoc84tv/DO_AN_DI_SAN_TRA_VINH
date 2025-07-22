@@ -33,14 +33,14 @@ export default function AncientPeriod() {
         
         <div className="order-1 lg:order-2 relative h-80 lg:h-auto rounded-xl overflow-hidden shadow-lg">
           <Image
-            src="/images/tra-vinh-co-dai.jpg"
-            alt="Trà Vinh thời kỳ cổ đại"
+            src="/image/lichsu/oceo/ban_do.jpg"
+            alt="Bản đồ Trà Vinh thời kỳ cổ đại"
             fill
             className="object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent">
             <div className="absolute bottom-0 p-4">
-              <p className="text-white text-sm font-medium">Di chỉ khảo cổ học tại Trà Vinh</p>
+              <p className="text-white text-sm font-medium">Bản đồ Trà Vinh thời kỳ cổ đại</p>
             </div>
           </div>
         </div>
@@ -59,9 +59,9 @@ export default function AncientPeriod() {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
           <div className="bg-white rounded-lg shadow-md overflow-hidden border border-amber-100 hover:shadow-lg transition-shadow">
-            <div className="relative h-48">
+            <div className="relative h-60">
               <Image
-                src="/images/oc-eo-artifact1.jpg"
+                src="/image/lichsu/oceo/do_gom.jpg"
                 alt="Hiện vật Óc Eo"
                 fill
                 className="object-cover"
@@ -74,9 +74,9 @@ export default function AncientPeriod() {
           </div>
           
           <div className="bg-white rounded-lg shadow-md overflow-hidden border border-amber-100 hover:shadow-lg transition-shadow">
-            <div className="relative h-48">
+            <div className="relative h-60">
               <Image
-                src="/images/oc-eo-artifact2.jpg"
+                src="/image/lichsu/oceo/tuong_hindu.jpg"
                 alt="Hiện vật Óc Eo"
                 fill
                 className="object-cover"
@@ -89,9 +89,9 @@ export default function AncientPeriod() {
           </div>
           
           <div className="bg-white rounded-lg shadow-md overflow-hidden border border-amber-100 hover:shadow-lg transition-shadow">
-            <div className="relative h-48">
+            <div className="relative h-60">
               <Image
-                src="/images/oc-eo-artifact3.jpg"
+                src="/image/lichsu/oceo/tien_co.jpg"
                 alt="Hiện vật Óc Eo"
                 fill
                 className="object-cover"
