@@ -1,6 +1,6 @@
 # 💻 Giới thiệu đồ án
 
-Đồ án này được xây dựng với mục tiêu tạo ra một **website hiện đại, mượt mà và dễ mở rộng** sử dụng các công nghệ frontend–backend mới nhất.
+Đồ án này được xây dựng WEBSITE "XÂY DỰNG WEBSITE DI TÍCH VÀ DI SẢN VĂN HÓA TỈNH TRÀ VINH" với mục tiêu tạo ra một **website hiện đại, mượt mà và dễ mở rộng** sử dụng các công nghệ frontend–backend mới nhất.
 Toàn bộ code được phát triển trong môi trường **Visual Studio Code**, với sự hỗ trợ của nhiều công cụ mở rộng mạnh mẽ nhằm tăng hiệu quả làm việc và khả năng tái sử dụng mã nguồn.
 
 ---
