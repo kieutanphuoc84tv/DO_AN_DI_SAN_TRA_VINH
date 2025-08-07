@@ -91,6 +91,7 @@ Ngoài ra, việc **tách cấu trúc microservices**, **sử dụng GraphQL**, 
   <img width="1000" height="1000" alt="image" src="https://github.com/user-attachments/assets/d70b1efa-c398-4826-a506-5789ba94e637" />
 </p>
 
-- Đồ án được phụ trách hoàn toàn tất cả do KIỀU TẤN PHƯỚC (bao gồm word x PPT)
+ 
+| Đồ án được phụ trách hoàn toàn tất cả do KIỀU TẤN PHƯỚC (bao gồm word x PPT)
 
 
