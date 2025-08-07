@@ -1,4 +1,4 @@
-*DESGINER WEBSITE BY KIEU TAN PHUOC
+*DESGINER (WEBSITE WORD PPTX) BY KIEU TAN PHUOC
 ---
 # 💻 Giới thiệu đồ án
 
