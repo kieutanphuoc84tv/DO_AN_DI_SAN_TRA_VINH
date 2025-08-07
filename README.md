@@ -59,7 +59,6 @@ Toàn bộ code được phát triển trong môi trường **Visual Studio Code
   <img width="800" alt="Docker" src="https://github.com/user-attachments/assets/32656d04-b13b-45ba-a0df-0f650ca681ce" />
 </p>
 
----
 
 # 🧹 Phần mở rộng sử dụng trong Visual Studio Code
 
