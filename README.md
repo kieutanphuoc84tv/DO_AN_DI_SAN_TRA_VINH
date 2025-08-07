@@ -1,4 +1,4 @@
-*DESGINER WEBSITE (WORD X PPT) BY KIEU TAN PHUOC
+*DESGINER WEBSITE BY KIEU TAN PHUOC
 ---
 # 💻 Giới thiệu đồ án
 
