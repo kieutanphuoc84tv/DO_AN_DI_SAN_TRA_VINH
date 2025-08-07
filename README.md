@@ -1,3 +1,5 @@
+*DESGINER WEBSITE (WORD X PPT) BY KIEU TAN PHUOC
+---
 # 💻 Giới thiệu đồ án
 
 Đồ án này được xây dựng WEBSITE "XÂY DỰNG WEBSITE DI TÍCH VÀ DI SẢN VĂN HÓA TỈNH TRÀ VINH" với mục tiêu tạo ra một **website hiện đại, mượt mà và dễ mở rộng** sử dụng các công nghệ frontend–backend mới nhất.
